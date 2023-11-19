@@ -22,12 +22,17 @@
 		<!-- SCRIPT TAG for JavaScript -->
 		<script>
 			// const score = { wins: 0, losses: 0, ties: 0 };
-			let score = JSON.parse(localStorage.getItem('score'));
+			// the || symbol is the Default Operator
+			let score = JSON.parse(localStorage.getItem('score')) || {
+				wins: 0,
+				losses: 0,
+				ties: 0,
+			};
 
 			// if (!score) is also null value
-			if (score === null) {
+			/* if (score === null) {
 				score = { wins: 0, losses: 0, ties: 0 };
-			}
+			} */
 
 			// localStorage.getItem('message');
 			// console.log(localStorage.getItem('score'));
@@ -76,7 +81,7 @@
 				/* Template String, use multi-line */
 				alert(
 					`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-          Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
+			       Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
 				);
 			}
 			let computerMove = '';

@@ -9,25 +9,27 @@
 	</head>
 	<body>
 		<!-- SCRIPT TAG for JavaScript -->
+		<!-- supersimple.dev/projects/objects/ -->
 		<script>
-			/* const product = {
+			/* const productTest = {
 				name: 'socks',
 				price: 1090,
 			};
-			console.log(product);
-			console.log(product.name);
-			console.log(product.price);
+			console.log(typeof productTest);
+			console.log(productTest);
+			console.log(productTest.name);
+			console.log(productTest.price);
 
 			product.name = 'cotton socks';
-			console.log(product);
+			console.log(productTest);
 
-			product.newProperty = true;
-			console.log(product);
+			productTest.newProperty = true;
+			console.log(productTest);
 
-			delete product.newProperty;
-			console.log(product); */
+			delete productTest.newProperty;
+			console.log(productTest); */
 
-			const product2 = {
+			const product = {
 				name: 'shirt',
 				['delivery-time']: '1 day',
 				rating: {
@@ -38,22 +40,22 @@
 					console.log('func inside object');
 				},
 			};
-			console.log(product2);
-			console.log(product2.name);
-			console.log(product2['name']);
+			console.log(product);
+			console.log(product.name);
+			console.log(product['name']);
 			/* console.log(product2.delivery - time); js thinks maths due to - */
-			console.log(product2['delivery-time']);
+			console.log(product['delivery-time']);
 
-			console.log(product2.rating.count);
+			console.log(product.rating.count);
 			product2.fun();
 
 			console.log(typeof console);
 			console.log(typeof console.log);
 
-			console.log(JSON.stringify(product2));
-			console.log(typeof JSON.stringify(product2));
+			console.log(JSON.stringify(product));
+			console.log(typeof JSON.stringify(product));
 
-			const jsonString = JSON.stringify(product2);
+			const jsonString = JSON.stringify(product);
 
 			JSON.parse(jsonString);
 			console.log(JSON.parse(jsonString));

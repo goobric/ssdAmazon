@@ -16,6 +16,8 @@
     <script>
       console.log(document.title);
       console.log(document.body);
+      // when a HTML element is inside the JavaScript (document.body) the HTML is converted into a JS Object
+      console.log(typeof document.body);
       // document.body cmd takes ALL of the content from the body html element and parses it into the JavaScript
       document.body.innerHTML = 'hello Coders!';
       // this code will remove the button html element and replace it with the string "hello Coders!"

@@ -11,14 +11,19 @@
     <!-- "local.Storage.getItem('score');" -->
     <!-- "document" is another Built-in Object in JS -->
     <h1>DOM Document Object Model</h1>
+    <p>the DOM combines JavaScript and HTML together; it's the glue</p>
     <hello>hello button</button>
     <script>
+      console.log(document.title);
+      console.log(document.body);
+      // document.body cmd takes ALL of the content from the body html element and parses it into the JavaScript
       document.body.innerHTML = 'hello Coders!';
       // this code will remove the button html element and replace it with the string "hello Coders!"
       // the document object and the web page are Linked Together
       document.title = 'Good Dom';
       // this script now changes the contents of the title html elemet to "Good Dom"
       // the document object in javascript represents or models the webpage.
+      // as well as Properties the document object also has Methods that can be used.
       
     </script>
   </body>
